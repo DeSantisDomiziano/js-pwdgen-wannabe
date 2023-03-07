@@ -8,9 +8,9 @@ const lastName = prompt(`digiata qui sotto il tuo cognome`);
 console.log(lastName);
 alert(`${lastName}... gran bel cognome, vabbè andiamo avanti`);
 
-let favColor = prompt(`digiata qui sotto il tuo colore preferito`);
+const favColor = prompt(`digiata qui sotto il tuo colore preferito`);
 console.log(favColor);
 alert(`ora che sappiamo che ti chiami ${firstName} ${lastName} e il tuo colore preferito è ${favColor} sei pronto per la tua nuova password?!`);
 
-let password = firstName + lastName + favColor + `23`;
-document.getElementById(`password`).innerHTML = password
+const password = `${firstName}${lastName}${favColor}23`; 
+document.getElementById(`password`).innerHTML = password;
